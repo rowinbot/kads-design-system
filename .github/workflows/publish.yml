@@ -23,11 +23,11 @@ jobs:
       with:
         node-version: '14.x'
         registry-url: 'https://registry.npmjs.org'
-    - name: Patch version 🔨
-      run: git checkout . && git config --local user.email "action@github.com" && git config --local user.name "GitHub Action" && npm version patch
+#    - name: Patch version 🔨
+#      run: git checkout . && git config --local user.email "action@github.com" && git config --local user.name "GitHub Action" && npm version patch
     - name: Publish package on NPM 🚀
       run: npm publish --access public
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-    - name: Update version on Github 🏁
-      run: git push
+#    - name: Update version on Github 🏁
+#      run: git push
