@@ -6,7 +6,7 @@ export function Button({ children }) {
       style={{
         backgroundColor: '#fff',
         border: '1px solid #000',
-        padding: '0.5rem',
+        padding: '0.25rem',
         borderRadius: '0.5rem',
         color: '#000',
         fontSize: '1rem',
