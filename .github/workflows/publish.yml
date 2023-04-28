@@ -24,7 +24,7 @@ jobs:
         node-version: '14.x'
         registry-url: 'https://registry.npmjs.org'
     - name: Patch version 🔨
-      run: npm version patch
+      run: git config --local user.email "action@github.com" && git config --local user.name "GitHub Action" && npm version patch
     - name: Publish package on NPM 🚀
       run: npm publish --access public
       env:
