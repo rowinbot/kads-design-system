@@ -1,9 +1,9 @@
 const babel = require('@rollup/plugin-babel');
 const { nodeResolve } = require('@rollup/plugin-node-resolve');
-const { terser } = require('rollup-plugin-terser');
 const commonjs = require('@rollup/plugin-commonjs');
 const del = require('rollup-plugin-delete');
 const packageJson = require('./package.json');
+const terser = require('@rollup/plugin-terser');
 
 module.exports = {
   input: './src/lib/index.js',
