@@ -64,3 +64,7 @@ When updating the design system, you'd want to publish an update to the NPM regi
   - Input a message reflecting your changes (e.g `Removed all components` / `Enhance button borders`)
 
 Github should take care from here and automatically publish the new version to NPM's registry if there were no issues.
+
+### Using your design system
+
+In order to use your design system in another project, just make sure to follow the instructions above in Installing replacing the name of the NPM package with the one you used.
