@@ -7,7 +7,7 @@ export function Button({ children }) {
         backgroundColor: '#fff',
         border: '1px solid #000',
         padding: '0.5rem',
-        borderRadius: '0.25rem',
+        borderRadius: '0.5rem',
         color: '#000',
         fontSize: '1rem',
         textTransform: 'uppercase',
