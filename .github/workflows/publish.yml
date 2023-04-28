@@ -30,4 +30,4 @@ jobs:
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
     - name: Update version on Github 🏁
-      run: git push origin $(git rev-parse --abbrev-ref HEAD)
+      run: git push
