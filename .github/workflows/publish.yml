@@ -13,17 +13,21 @@ jobs:
       with:
         path: node_modules
         key: 14.x-${{ runner.OS }}-build-actions/checkout@v3${{ hashFiles('package.json') }}
-    - name: Install
+    - name: Install Deps 📦
       if: steps.cache-modules.outputs.cache-hit != 'true'
       run: npm install
-    - name: Build
+    - name: Build Design Systemm 💄
       run: npm run prepare-system
-    - name: Publish
+    - name: Setup Node 🗳️
       uses: actions/setup-node@v3
       with:
         node-version: '14.x'
         registry-url: 'https://registry.npmjs.org'
-    - name: Publish package on NPM 📦
+    - name: Patch version 🔨
+      run: npm version patch
+    - name: Publish package on NPM 🚀
       run: npm publish --access public
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+    - name: Update version on Github 🏁
+      run: git push origin $(git rev-parse --abbrev-ref HEAD)
