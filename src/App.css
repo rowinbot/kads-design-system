@@ -1,0 +1,10 @@
+.showcase {
+  padding: 0 1rem;
+}
+
+.showcase-component {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  padding: 1rem;
+}
