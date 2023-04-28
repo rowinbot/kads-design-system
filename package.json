@@ -1,5 +1,5 @@
 {
-  "name": "@kads/react",
+  "name": "@rowinbot/kads-react",
   "author": "Rowin Hernandez",
   "version": "0.0.1",
   "main": "dist/cjs/index.js",
