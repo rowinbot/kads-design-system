@@ -6,9 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && ( github.ref == 'refs/heads/main' )
     steps:
-    - uses: actions/checkout@v3
-    - name: Patch git
-      run: git config --global --add safe.directory $(realpath .)
+    - uses: actions/checkout@v1
     - name: Cache node_modules
       id: cache-modules
       uses: actions/cache@v1
