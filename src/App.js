@@ -10,7 +10,8 @@ function App() {
         <h2>Button</h2>
 
         <div className="showcase-component">
-          <Button>Go Home</Button>
+          <Button variant="primary">Primary button</Button>
+          <Button variant="secondary">Secondary button</Button>
         </div>
       </section>
 
